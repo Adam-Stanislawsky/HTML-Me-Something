@@ -1,12 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-   <head>
-   </head>
-   <body> -->
-      <!-- Write your HTML in this file! -->
-   <!-- </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,61 +6,94 @@
    <title>My favorite ways to make coffee</title>
    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
    <header>
-      <h1>My Favorite Ways To Make Coffee</h1>
-      <!-- <img src="mdn-logo-sm.png" alt="MDN logo" /> -->
-    </header>
+      <h1 id="mainHeading">Favorite Coffee Methods</h1>
+   </header>
     
     <main>
+
+      <nav>
+         <a href="#aeropress">AeroPress</a>
+         <a href="#siphon">Siphon</a>
+         <a href="#espresso">Espresso</a>
+         <a href="#v60">V60</a>
+         <a href="#chemex">Chemex</a>
+     </nav>
+
+      <section id="aeropress">
+
       <article>
          <h2>Aeropress</h2>
       </article>
       <img src="images/aeropress1.png" alt="the best coffee maker" width="300" height="300"> 
-      <p>Aeropress may be the most economical way to begin coffee as a 'hobby'. Its cheap, can be found at target, and allows you to experiment. There are tons of recipes freely available online (here is a good resource). Out of all my coffee contraptions, I certainly use the aeropress most frequently</p>
-      <p>It consists of a filter holder, which can use either a metal (I don't like these) or paper filter, a brew chamber, and a plunger</p>
-      <p>To summarize: 1: a filter is placed in the filter holder (rinse if it's a paper filter 2: connect the filter holder with the filter to the brew chamber and place it on your cup or carafe 3: add ground coffee 4: add hot water to desired level and wait according to your preference 5: Insert the plunger and slowly push until a light hiss is heard.</p>
+      <p>Its cheap, can be found at target, and allows you to experiment. There are tons of recipes freely available online <a href="https://aeroprecipe.com/">(here is a popular resource)</a>. , I use the aeropress most frequently out of all my coffee contraptions</p>
+      <p>It consists of a filter holder, which can use either a metal mesh or paper filter, a brew chamber, and a plunger</p>
+      <p>With some practice it's pretty easy to use, especially first thing in the morning when I'm not awake yet:
+         <ol>
+            <li>Put filter in filter holder </li>
+            <li>Connect the filter holder with filter to brew chamber and place it on your mug</li>
+            <li>Add ground coffee</li>
+            <li>Add hot water to desired level and wait according to your preference</li>
+            <li>Insert the plunger and slowly push until hiss.</li>
+          </ol> 
+      </p>
 
+      </section>
+
+      <section id="siphon">
        <article>
          <h2>Siphon</h2>
          <img src="images/siphon.png" alt="the best coffee maker" width="400" height="300"> 
-         <p>I bought one of these at a thrift store recently, but I've always wanted to try it. It has become my new go-to anytime I have a friend over. It makes about two and a half full cups, and the elaborate brew process has yet to get old. I was surprised how intuitive it is to use. It uses a small alcohol lamp to heat the coffee in the lower chamber to a boil, then an upper chamber with a gasket is inserted, which forces the boiling water into the upper chamber where it cools slightly to a relatively hot brew temperature. You then add your ground coffee to that water in the top chamber and let it brew for a few minutes. When you're ready you turn off the alcohol burner, and the cooling empty lower chamber will vacuum the coffee through the cloth filter in the upper chamber. Once all the coffee has been pulled through, the top chamber can be carefully removed and set aside. It seems to work especially well for very lightly roasted coffees that require a high temp. </p>
+         <p class="funParagraph">I bought one of these at a thrift store recently, but I've always wanted to try it. It has become my new go-to anytime I have a friend over. It makes about two and a half full cups, and the elaborate brew process has yet to get old. I was surprised how intuitive it is to use. It uses a small alcohol lamp to heat the coffee in the lower chamber to a boil, then an upper chamber with a gasket is inserted, which forces the boiling water into the upper chamber where it cools slightly to a relatively hot brew temperature. You then add your ground coffee to that water in the top chamber and let it brew for a few minutes. When you're ready you turn off the alcohol burner, and the cooling empty lower chamber will vacuum the coffee through the cloth filter in the upper chamber. Once all the coffee has been pulled through, the top chamber can be carefully removed and set aside. It seems to work especially well for very lightly roasted coffees that require a high temp. </p>
        </article>
 
+      </section>
+
+      <section id="espresso">
        <article>
          <h2>Espresso</h2>
-         <p>Espresso is a hobby in itself, and there is too much information to list here. It requires a higher initial investment to get acceptable results. The most important  piece of equipment will be a high quality burr grinder. Many beginners in espresso choose to start with a manually operated espresso machine and grinder to save money. These days, you could realistically get a capable set up for a few hundred dollars. Just a few years ago, it was tough to find an espresso machine and grinder below around 500</p>
-         <h3>My espresso machines</h3>
+         <p>Espresso is a hobby in itself, and there is too much information to list here. It requires a higher initial investment to get acceptable results. The most important  piece of equipment will be a high quality burr grinder. Many beginners in espresso choose to start with a manually operated espresso machine and grinder to save money. These days, you can get a capable set up for a few hundred dollars.</p>
+         <h3>espresso machines</h3>
             <img src="images/caravelle.png" alt="my first espresso machine" width="300" height="300">
             <img src="images/robot1.png" alt="my favorite espresso machine" width="500" height="300">
             <img src="images/e61.png" alt="got a good deal on this, but don't use it much" width="300" height="300">
-         <p>I've acquired a few espresso machines over the years. I started with a lever operated but electronically heated Caravelle. It has a European plug, so it's sort of annoying to use. In around 2018, I switched to a Cafelat Robot, which is entirely manual. This machine looks very cool and I enjoy its simple streamlined workflow. About 3 years ago, I obtained an E61 machine, which honestly is more trouble than its worth. I do enjoy using the steam wand to make hot chai and ciders though. I'm too lazy to sell it. The Robot gets used the most</p>
+         <p id="testP" class="funParagraph">I've acquired a few espresso machines over the years. I started with a lever operated but electronically heated Caravelle. It has a European plug, so it's sort of annoying to use. In around 2018, I switched to a Cafelat Robot, which is entirely manual. This machine looks very cool and I enjoy its simple streamlined workflow. About 3 years ago, I thrifted an E61 machine (insane), but its more trouble than its worth. Takes a long time to heat. I do enjoy using the steam wand to make hot drinks though. I'm too lazy to sell it. The Robot gets used the most.</p>
         
-         <h3>My coffee grinders</h3>
+         <h3>coffee grinders</h3>
             <img src="images/lido.png" alt="free arm workout" width="300" height="200">
             <img src="images/df64.png" alt="easy and relatively affordable" width="300" height="300">
-         <p>I used a Lido E from orphan espresso for many years. I added a ebay special DF64 single dose grinder a couple years ago and haven't looked back. Manual grinding is great and cheap, but I really don't miss it. I still  use the hand grinder for weird coffees or very coarse grinds.</p>
+         <p>I used a Lido E hand grinder from orphan espresso for many years. I added a cheap electric single dose grinder a couple years ago. Manual grinding is great and cheap, but I really don't miss it. I still  use the hand grinder for weird coffees or coarse grinds.</p>
 
       
       </article>
+      </section>
 
+      <section id="v60">
        <article>
          <h2>V60</h2>
          <img src="images/v60.png" alt="cheap, cheerful" width="300" height="300">
-         <p>The V60 is what most people think about when they hear pour over. I really like the basic plastic one in the smallest size they offer. You don't have to use much coffee in it, and it doesn't really need to be preheated. Unlike the aeropress, which is also a great cheap coffee maker, this one requires a gooseneck kettle for best results. </p>
+         <p>I like the basic plastic one in the smallest size. You don't have to use much coffee in it, and it doesn't really need to be preheated. Unlike the aeropress, which is also a great cheap coffee maker, this one requires a gooseneck kettle for best results. </p>
        </article>
 
+      </section>
+
+      <section id="chemex">
        <article>
          <h2>Chemex</h2>
-         <p>The chemex is a big pyrex glass carafe with a built in filter holder. It was designed in the middle of the last century by a serial entrepreneur, who created all sorts of gadgets. I found a very old one at an estate sale that included the original brochure. They suggested that you could also use it as a carafe to make cocktails, or a kitchen utensil holder. </p>
+         <img src="images/chemex1.png" alt="part of an old chemex&reg; advertisement" width="200" height="300">
+         <p>The chemex is a big pyrex glass carafe with a built in filter holder. I found a very old one at an estate sale that included the original brochure. They suggested that you could also use it as a carafe to make cocktails, or a kitchen utensil holder. </p>
          <p>Although I really do like making coffee with these, I've sort of fallen out of love with them lately. The chemex filters are oddly shaped and have a tendency to clog.</p>
+         <img src="images/chemex2.png" alt="another old chemex ad" width="400" height="300">
        </article>
 
+      </section>
+       
     </main>
 
     <footer>
-      <p>Author: Adam Stanislawsky</p>
-      <p><a href="mailto:adamstanislawsky@gmail.com">adamstanislawsky@gmail.com</a></p>
+      <p>&copy; Adam Stanislawsky </p>
     </footer> 
 
 </body>
